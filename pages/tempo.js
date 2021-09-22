@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 function Tempo(props){ 
+    console.log('->>>>>>>>>>>> Passando pelo front')
     const dynamicDate = new Date();
     const dynamicDateString = dynamicDate.toGMTString();
 
@@ -13,6 +14,7 @@ function Tempo(props){
 }
 
 export function getStaticProps() {
+    console.log('->>>>>>>>>>>> Passando pelo Back')
     const staticDate = new Date();
     const staticDateString = staticDate.toGMTString();
     
